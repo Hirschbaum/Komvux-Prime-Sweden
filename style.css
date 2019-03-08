@@ -1,0 +1,90 @@
+body{
+    background-color: #feffff;
+    font-family: sans-serif;
+    /*margin: 0;*/
+ }
+ 
+ header{
+    text-align: center;
+    background-color: #292c2b;
+    color: #fff;
+    padding: 30px;
+ }
+ 
+ .jumbotron {
+    height: 100vh;
+    background-image: url(img/books1.jpg);
+    background-size: cover;
+    background-repeat: no repeat;
+ }
+
+ .content{
+    padding: 1em 4em;
+ }
+ 
+ /*efter row: the books: display in table*/
+ .row::after and footer::before {
+    content:"";
+    clear: both;
+    display: table;
+ }
+
+ .books .book-list{
+    padding-left: 0;
+    list-style: none;
+ }
+ 
+ .books .book-list .book{
+    margin: 2%;
+    height: 30%;
+    background-color: #fff;
+ }
+ 
+ .books .book-list .book .book-content{
+    padding: 2%;
+ }
+ 
+ .books .book-list .book img{
+    width: 100%;
+ }
+ 
+ .books .book-list .book .book-content h5 small{
+    font-size: 10px;
+    color: rgb(197, 35, 43);
+ }
+ 
+ .books .book-list .book button{
+    display: block;
+    margin: 2% auto;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    outline: none;
+  }
+ 
+/* .cart {
+     float: right;
+ }*/
+
+ .cart .cart-list{
+    padding-left: 0px;
+    list-style: none;
+ }
+ 
+ .cart .cart-list .item h5,
+ .cart .cart-list.item .close{
+    display: inline;
+ }
+
+ /*funkar ej:, footer på fel plats*/
+ main::after {
+     content: "";
+     clear: both;
+     display: inline;
+ }
+ footer > #copy {
+    text-align: center;
+    background-color: #292c2b;
+    color: #fff;
+    padding: 10px;
+ }
